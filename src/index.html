@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <script src="https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js"></script>
+  </head>
+  <body>
+    <button onclick="onSetCaller" id="BtnSetCaller">Set Caller</button>
+    
+    <button onclick="onSetCallee()" id="BtnSetCallee">Set Callee</button>
+    <div>AppId: <span id="AppId"></span></div>
+    <div>Remote Id: penpalz-
+      <input id="RemoteId" type="text"/>
+      <button onclick="onCall()" id="BtnSetCaller">Call Now</button>
+    </div>
+    <div id="debug"></div>
+    <video id="RemoteVideo" autoplay="autoplay" width="300" height="300"></video>
+    <script src="main.js"></script>
+  </body>
+</html>
